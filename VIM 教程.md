@@ -111,13 +111,147 @@ g ctrl g 会获得更多信息
 
 
 
+---
+
+### DeletingLesson
+
+x : 删除光标所在的字符
+
+X; 删除光标的左侧字符
+
+dw: 删除字符 (delete + the word)
+
+d2w
+
+dl 删除光标的字符 (x是它的快捷键)
+
+dh 等于大写的X
+
+dd 删除当前行
+
+dj 删除当前行和下一行
+
+dk : 删除当前行和上一行
+
+d0 删除到开头的所有字符
+
+d$ 删除到末尾的所有字符 (D 是它的快捷方式)
+
+3dd 删除下面3行
+
+<img src="VIM 教程.assets/image-20220603110841512.png" alt="image-20220603110841512" style="zoom:50%;" />
+
+![image-20220603110935382](VIM 教程.assets/image-20220603110935382.png)
 
 
 
+. 会重复命令
 
 
 
+---
 
+### help system in vim
+
+refresh your memory quickly 
+
+在我们输入 :help后
+
+<img src="VIM 教程.assets/image-20220603135523588.png" alt="image-20220603135523588" style="zoom:50%;" />
+
+
+
+:help dd
+
+<img src="VIM 教程.assets/image-20220603135713133.png" alt="image-20220603135713133" style="zoom:50%;" />
+
+
+
+:help count 
+
+:h
+
+ctrl + o : go back
+
+ctrl + i : jum forward 
+
+linewise 
+
+characterwise
+
+Ctrl + ] : 会进行跳转
+
+ctrl + ww 会从上方的窗口跳转到下方
+
+命令自动补全 ctrl + d / tab 可以补全
+
+
+
+---
+
+### 复制粘贴
+
+<img src="VIM 教程.assets/image-20220603141715658.png" alt="image-20220603141715658" style="zoom:50%;" />
+
+vim使用了一个寄存器的概念
+
+dd其实类似于剪切, 会把东西存储在寄存器中
+
+x: 其实也是剪切
+
+p : put command (大写的p是在当前光标)
+
+
+
+复制是y 
+
+yank
+
+
+
+<img src="VIM 教程.assets/image-20220603142353672.png" alt="image-20220603142353672" style="zoom:50%;" />
+
+
+
+y2w
+
+yy: 复制一整行
+
+撤销: u
+
+恢复: ctrl + r
+
+
+
+![image-20220603143003467](VIM 教程.assets/image-20220603143003467.png)
+
+<img src="VIM 教程.assets/image-20220603143024109.png" alt="image-20220603143024109" style="zoom:50%;" />
+
+<img src="VIM 教程.assets/image-20220603143047990.png" alt="image-20220603143047990" style="zoom:50%;" />
+
+
+
+:reg查看寄存器
+
+"0p 使用带寄存器的粘贴 
+
+黑洞寄存器
+
+"_dd 黑洞寄存器删除, 不会影响当前寄存器
+
+a到z共有26个指名寄存器
+
+"ayy 把东西放在指名寄存器a中
+
+"Ayy 会在a寄存器后面增加写
+
+"zdw
+
+:reg z
+
+:reg 1z
+
+2"hp
 
 
 
