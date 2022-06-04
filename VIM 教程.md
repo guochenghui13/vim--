@@ -323,6 +323,74 @@ gJ 进行拼接并且不会自动加入空格
 
 
 
+---
+
+Search 
+
+f + {char} : 搜索字符, 在一行内进行搜索
+
+F + {char} : 向上搜索
+
+; 重复搜索
+
+, 反方向搜索
+
+t + {char} 到搜索的字符的前一个, 通过";" 进行重复
+
+2fa
+
+dtw df{space} dW
+
+/ 搜索单词
+
+n 代表下一个
+
+N 代表上一个
+
+
+
+set is : 开启增量搜索
+
+set is? : 判断增量搜索是否开启
+
+set nois: 关闭
+
+
+
+set hls? 是否开启
+
+set hls 开启
+
+nohls 暂时关闭, until the next search
+
+set nohls
+
+
+
+/and -> cw -> . (重复指令)
+
+/* 跳转到下一个单词 n也行(但是这个是完整的单词)
+
+/# 和/* 相反
+
+d/This
+
+"ay/z 
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
 
 
 
